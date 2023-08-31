@@ -3,6 +3,7 @@ import pandas as pd
 
 name = 'Catalogue_Carrick_20230831.xlsx'
 df = pd.read_excel('./data/'+name, index_col=0)
+df = df.astype({'code-article':'int'})
 st.write('Nombre total d articles est ', len(df))
 
 number = st.number_input('Insérer le code article', step=1, format="%i")
