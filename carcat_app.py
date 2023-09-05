@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-name = 'Catalogue_Carrick_20230831.xlsx'
+name = 'Catalogue_Carrick_20230904.xlsx'
 df = pd.read_excel('./data/'+name, index_col=0)
 st.write('Nombre total d articles est ', len(df))
 
